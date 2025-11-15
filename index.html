@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FIT–YunTech Joint Seminar 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+            display: ['-apple-system', 'SF Pro Display', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            ink: '#0b0b0f',
+            soft: '#f5f5f7',
+            subtle: '#d2d2d7',
+            accent: '#0071e3',
+          },
+          boxShadow: {
+            soft: '0 18px 60px rgba(0,0,0,0.08)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #ffffff 0, #f5f5f7 55%, #ededf0 100%);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero-wrapper {
+      transition: transform 0.6s ease, opacity 0.6s ease;
+      transform-origin: top left;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-ink antialiased">
+
+  <!-- Navigation -->
+  <header class="nav-blur backdrop-blur bg-white/60 border-b border-slate-200/70 sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <!-- LOGO 可自由替換 -->
+        <a href="#" class="h-7 w-7 rounded-xl bg-white flex items-center justify-center overflow-hidden">
+          <img
+            src="National_Yunlin_University_of_Science_and_Technology_logo.png"
+            alt="Seminar Logo"
+            class="h-full w-full object-contain"
+          />
+        </a>
+
+        <span class="text-xs sm:text-sm tracking-[0.16em] uppercase text-slate-700">
+          FIT–YunTech Joint Seminar 2026
+        </span>
+      </div>
+
+      <nav class="hidden md:flex gap-6 text-xs text-slate-700">
+        <a href="#overview" class="hover:text-ink">Overview</a>
+        <a href="#program" class="hover:text-ink">Program</a>
+        <a href="#topics" class="hover:text-ink">Topics</a>
+        <a href="#dates" class="hover:text-ink">Dates</a>
+        <a href="#submission" class="hover:text-ink">Submission</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+
+    <!-- Hero -->
+    <section class="pt-12 sm:pt-16 lg:pt-20">
+      <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center hero-wrapper">
+        <div>
+          <p class="text-xs tracking-[0.22em] uppercase text-slate-500 mb-3">
+            March 16–17, 2026 · YunTech, Taiwan
+          </p>
+
+          <h1 class="hero-title font-display text-4xl sm:text-5xl lg:text-[3.4rem] font-semibold tracking-tight text-ink">
+            Where graduate research
+            <span class="block">meets global collaboration.</span>
+          </h1>
+
+          <p class="mt-5 text-sm sm:text-base text-slate-700 leading-relaxed max-w-xl reveal">
+            The FIT–YunTech Joint Seminar is an international-style event designed for graduate
+            students and faculty to share research, connect across institutions, and spark new
+            collaborations in engineering and information technology.
+          </p>
+
+          <div class="mt-7 flex flex-wrap gap-3 reveal">
+            <a href="#submission"
+               class="inline-flex items-center rounded-full bg-ink px-6 py-2.5 text-sm font-medium text-white hover:bg-black transition">
+              Submit abstract
+            </a>
+
+            <a href="#program"
+               class="inline-flex items-center rounded-full border border-subtle px-6 py-2.5 text-sm font-medium text-slate-800 bg-white/80 hover:border-ink transition">
+              View program
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero side card -->
+        <div class="bg-white/80 rounded-3xl shadow-soft border border-white/40 p-6 sm:p-8 space-y-5 reveal">
+          <div>
+            <p class="text-xs uppercase tracking-[0.18em] text-slate-500 mb-2">
+              Event snapshot
+            </p>
+            <p class="text-lg font-semibold text-ink">
+              FIT–YunTech Joint Seminar 2026
+            </p>
+          </div>
+
+          <dl class="grid grid-cols-2 gap-4 text-xs sm:text-sm">
+            <div><dt class="text-slate-500">Dates</dt><dd class="font-medium text-ink mt-1">March 16–17, 2026</dd></div>
+            <div><dt class="text-slate-500">Venue</dt><dd class="font-medium text-ink mt-1">YunTech, Taiwan</dd></div>
+            <div><dt class="text-slate-500">Language</dt><dd class="font-medium text-ink mt-1">English</dd></div>
+            <div><dt class="text-slate-500">Scale</dt><dd class="font-medium text-ink mt-1">30+ presentations · 50+ participants</dd></div>
+          </dl>
+
+          <div class="h-px bg-gradient-to-r from-transparent via-subtle to-transparent"></div>
+
+          <p class="text-xs text-slate-600">
+            Designed for graduate students and faculty. Experience an international, conference-style
+            environment with panel discussions, tutorials, lab tours, and research presentations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="mt-16 sm:mt-20 reveal">
+      <div class="flex items-end justify-between gap-4 mb-6">
+        <h2 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight">
+          A seminar with purpose.
+        </h2>
+        <span class="hidden sm:inline text-xs text-slate-500">
+          Thoughtfully crafted objectives for emerging researchers.
+        </span>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-5">
+        <article class="bg-white/80 rounded-2xl border border-white shadow-sm px-5 py-6">
+          <h3 class="text-sm font-semibold mb-2 text-ink">Present with confidence</h3>
+          <p class="text-sm text-slate-700">
+            Provide graduate students with valuable experience presenting in an international event.
+          </p>
+        </article>
+
+        <article class="bg-white/80 rounded-2xl border border-white shadow-sm px-5 py-6">
+          <h3 class="text-sm font-semibold mb-2 text-ink">Exchange and connect</h3>
+          <p class="text-sm text-slate-700">
+            Encourage academic and cultural exchange across institutions.
+          </p>
+        </article>
+
+        <article class="bg-white/80 rounded-2xl border border-white shadow-sm px-5 py-6">
+          <h3 class="text-sm font-semibold mb-2 text-ink">Grow collaborations</h3>
+          <p class="text-sm text-slate-700">
+            Foster dialogue and explore opportunities for future collaborative research.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Program -->
+    <section id="program" class="mt-20 sm:mt-24 reveal">
+      <div class="flex items-end justify-between gap-4 mb-6">
+        <h2 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight">
+          Two days, many perspectives.
+        </h2>
+        <span class="hidden sm:inline text-xs text-slate-500">
+          From strategic panels to student-led sessions.
+        </span>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-10">
+        <div class="space-y-5">
+          <div class="text-xs uppercase tracking-[0.18em] text-slate-500">Day 1 · March 16</div>
+          <div class="bg-white/80 rounded-2xl border border-white shadow-sm p-5 space-y-3">
+            <div>
+              <p class="text-sm font-semibold text-ink">Panel Discussion</p>
+              <p class="text-xs text-slate-600 mt-1">Discussion on collaboration strategies and thematic convergence.</p>
+            </div>
+            <div class="h-px bg-slate-100"></div>
+            <div>
+              <p class="text-sm font-semibold text-ink">Campus & Lab Tour</p>
+              <p class="text-xs text-slate-600 mt-1">Guided visits to YunTech laboratories and facilities.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-5">
+          <div class="text-xs uppercase tracking-[0.18em] text-slate-500">Day 2 · March 17</div>
+          <div class="bg-white/80 rounded-2xl border border-white shadow-sm p-5 space-y-4">
+            <div>
+              <p class="text-sm font-semibold text-ink">Tutorial Lectures</p>
+              <p class="text-xs text-slate-600 mt-1">Invited talks by faculty on advanced topics and methodologies.</p>
+            </div>
+            <div class="h-px bg-slate-100"></div>
+
+            <div>
+              <p class="text-sm font-semibold text-ink">Graduate Research Sessions</p>
+              <p class="text-xs text-slate-600 mt-1">Oral and poster sessions grouped by thematic areas.</p>
+            </div>
+            <div class="h-px bg-slate-100"></div>
+
+            <div>
+              <p class="text-sm font-semibold text-ink">Networking Session</p>
+              <p class="text-xs text-slate-600 mt-1">Informal gathering for cross-institutional discussions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics -->
+    <section id="topics" class="mt-20 sm:mt-24 reveal">
+      <div class="flex items-end justify-between gap-4 mb-6">
+        <h2 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight">
+          Designed for engineering and beyond.
+        </h2>
+        <span class="hidden sm:inline text-xs text-slate-500">
+          Broad, inclusive topics across engineering and technology.
+        </span>
+      </div>
+
+      <p class="text-sm text-slate-700 max-w-2xl mb-5">
+        Papers related to engineering and information technology are welcome. Suggested topics include:
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+        <ul class="bg-white/80 rounded-2xl border border-white shadow-sm p-4 space-y-1 text-slate-800">
+          <li>Electronic devices and materials</li>
+          <li>Electric and hybrid vehicles</li>
+          <li>Automation and robotics</li>
+          <li>Material sciences and engineering</li>
+        </ul>
+
+        <ul class="bg-white/80 rounded-2xl border border-white shadow-sm p-4 space-y-1 text-slate-800">
+          <li>Chemistry and biology</li>
+          <li>Information technology</li>
+          <li>AI in engineering design</li>
+          <li>IoT systems</li>
+        </ul>
+
+        <ul class="bg-white/80 rounded-2xl border border-white shadow-sm p-4 space-y-1 text-slate-800">
+          <li>Computer graphics, network technology</li>
+          <li>Embedded systems</li>
+          <li>Network security & cryptography</li>
+          <li>Big data analysis</li>
+          <li>Management science</li>
+          <li>Sustainable engineering practices</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Dates -->
+    <section id="dates" class="mt-20 sm:mt-24 reveal">
+      <div class="flex items-end justify-between gap-4 mb-6">
+        <h2 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight">
+          Mark your calendar.
+        </h2>
+        <span class="hidden sm:inline text-xs text-slate-500">
+          A clear timeline for authors and participants.
+        </span>
+      </div>
+
+      <div class="bg-white/80 rounded-3xl border border-white shadow-soft p-6 sm:p-7">
+        <dl class="space-y-3 text-sm">
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+            <dt class="text-slate-600">Recruitment of presenters</dt>
+            <dd class="font-medium text-ink">October–November, 2025</dd>
+          </div>
+          <div class="h-px bg-slate-100"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+            <dt class="text-slate-600">Abstract submission deadline</dt>
+            <dd class="font-medium text-ink">December 14, 2025</dd>
+          </div>
+          <div class="h-px bg-slate-100"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+            <dt class="text-slate-600">Program finalization</dt>
+            <dd class="font-medium text-ink">Early January, 2026</dd>
+          </div>
+          <div class="h-px bg-slate-100"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+            <dt class="text-slate-600">Manuscript submission deadline (2 pages)</dt>
+            <dd class="font-medium text-ink">February 15, 2026</dd>
+          </div>
+          <div class="h-px bg-slate-100"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+            <dt class="text-slate-600">Seminar dates</dt>
+            <dd class="font-medium text-ink">March 16–17, 2026</dd>
+          </div>
+          <div class="h-px bg-slate-100"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+            <dt class="text-slate-600">Post-event feedback</dt>
+            <dd class="font-medium text-ink">Late March–April, 2026</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Submission -->
+    <section id="submission" class="mt-20 sm:mt-24 reveal">
+      <div class="flex items-end justify-between gap-4 mb-6">
+        <h2 class="font-display text-2xl sm:text-3xl font-semibold tracking-tight">
+          Submit your work.
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-start">
+
+        <div class="bg-white/80 rounded-3xl border border-white shadow-sm p-6 sm:p-7 space-y-4 text-sm">
+          <p class="text-slate-700">
+            YunTech participants are asked to submit:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-slate-800">
+            <li>Paper title and abstract</li>
+            <li>Presenter name(s)</li>
+          </ul>
+
+          <p class="text-slate-700 pt-2">
+            Please refer to the schedule above for all important dates.
+            Abstract format:
+            <a href="https://drive.usercontent.google.com/download?id=1fYI8IwYDgYeFvojQETUUSRgWLTf1UYdB&export=download&authuser=0&confirm=t&uuid=f6978c20-9fab-44b2-bd1a-521fb491456c&at=ALWLOp54m6wwLOIy8zXi_g248L5c:1762872646837" target="_blank"
+              class="underline decoration-subtle decoration-2 underline-offset-4 hover:text-accent">
+              link attached
+            </a>.
+          </p>
+        </div>
+
+        <div class="bg-ink text-white rounded-3xl shadow-soft p-6 sm:p-7 space-y-3 text-sm">
+          <p class="text-xs uppercase tracking-[0.22em] text-slate-300">
+            Submission contact
+          </p>
+
+          <p class="text-base font-semibold">Mr. Meng-Hsun Tsai</p>
+
+          <p class="text-slate-100/90">
+            Technician, College of Intelligent Science and Technology, YunTech
+          </p>
+
+          <div class="h-px bg-slate-700/70 my-2"></div>
+
+          <p class="text-slate-200">
+            Tel: <span class="font-mono text-[13px]">+886-5-534-2601 ext. 7182</span><br />
+            Email:
+            <a href="mailto:tsaimh@yuntech.edu.tw" class="text-accent hover:underline">
+              tsaimh@yuntech.edu.tw
+            </a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer with Organizational Plan -->
+  <footer class="border-t border-slate-200/70 bg-white/70 mt-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+      <div class="grid sm:grid-cols-3 gap-8 mb-10 text-[11px] leading-relaxed text-slate-500">
+
+        <div>
+          <h3 class="font-semibold text-slate-600 mb-2 text-[12px]">Co-organizers</h3>
+          <p>FIT and YunTech jointly organize the seminar and share academic responsibilities.</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-slate-600 mb-2 text-[12px]">Operational Support</h3>
+          <p>Faculty members and graduate students from both institutions assist with logistics and coordination.</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-slate-600 mb-2 text-[12px]">Financial Responsibility</h3>
+          <p>Each university covers its own travel, accommodation, and local participation expenses.</p>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-200/70 pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-slate-400">
+        <span>© 2026 FIT–YunTech Joint Seminar.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scroll Animation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      const heroWrapper = document.querySelector('.hero-wrapper');
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        const scale = Math.max(1 - y * 0.0005, 0.86);
+        const opacity = Math.max(1 - y * 0.0018, 0.1);
+        heroWrapper.style.transform = `scale(${scale}) translateY(${y * 0.02}px)`;
+        heroWrapper.style.opacity = opacity;
+      });
+
+      const nav = document.querySelector('.nav-blur');
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        const blur = 4 + y * 0.01;
+        const borderAlpha = Math.min(0.2 + y * 0.0012, 0.45);
+        nav.style.backdropFilter = `blur(${blur}px)`;
+        nav.style.borderColor = `rgba(203,213,225,${borderAlpha})`;
+      });
+    });
+  </script>
+
+</body>
+</html>
