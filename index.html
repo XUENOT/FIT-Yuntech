@@ -337,12 +337,13 @@
           <ul class="list-disc list-inside space-y-1 text-slate-800">
             <li>Paper title and abstract</li>
             <li>Presenter name(s)</li>
+            <li>Registration form</li>
           </ul>
 
           <p class="text-slate-700 pt-2">
             Please refer to the schedule above for all important dates.
-            Abstract format:
-            <a href="https://drive.usercontent.google.com/download?id=1fYI8IwYDgYeFvojQETUUSRgWLTf1UYdB&export=download&authuser=0&confirm=t&uuid=f6978c20-9fab-44b2-bd1a-521fb491456c&at=ALWLOp54m6wwLOIy8zXi_g248L5c:1762872646837" target="_blank"
+            Abstract and registration form:
+            <a href="#" target="_blank"  onclick="downloadFiles()"
               class="underline decoration-subtle decoration-2 underline-offset-4 hover:text-accent">
               link attached
             </a>.
@@ -407,7 +408,6 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -437,6 +437,22 @@
         nav.style.borderColor = `rgba(203,213,225,${borderAlpha})`;
       });
     });
+    
+    function downloadFiles() {
+    const files = [
+        "https://drive.usercontent.google.com/download?id=11cCLFRb0TSx_IUATMdksIXKMz0ds0qXI&export=download&authuser=0&confirm=t&uuid=9d3be3ff-2796-4424-bece-1d8e863cdf8d&at=ALWLOp5MSpL-dD3XIxj8fe2tCwPJ:1763360990274",
+        "https://drive.usercontent.google.com/download?id=1fYI8IwYDgYeFvojQETUUSRgWLTf1UYdB&export=download&authuser=0&confirm=t&uuid=f6978c20-9fab-44b2-bd1a-521fb491456c&at=ALWLOp54m6wwLOIy8zXi_g248L5c:1762872646837"
+    ];
+
+    files.forEach(url => {
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+}
   </script>
 
 </body>
